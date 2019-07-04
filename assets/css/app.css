@@ -1,0 +1,249 @@
+html,
+body {
+    font-family: "Open Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 2em 0;
+    border-bottom: 4px solid #1c75bc;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__title {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.navbar__subtitle {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar__subtitle {
+    text-transform: uppercase;
+}
+
+.hero {
+    padding: 4em 0;
+}
+
+.hero__img {
+    /*border-radius: 12px;*/
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.card {
+    width: 33%;
+    margin-bottom: 4em;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 1em;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.card__wrapper:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__header {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card__description {
+    color: #718096;
+}
+
+.card__footer {
+    margin-top: auto;
+}
+
+.about__body {
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2em 4em;
+    background-color: #1c75bc;
+}
+
+.footer__left {
+    font-weight: 600;
+}
+
+.footer__right {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__link {
+    padding: 1em;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Helpers */
+
+.btn {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+.btn--block {
+    display: block;
+}
+
+.btn--primary {
+    color: #fff;
+    background-color: #1c75bc;
+}
+
+.btn--primary:hover {
+    background-color: #4299e1;
+}
+
+.btn--disabled {
+    cursor: not-allowed;
+    background-color: #edf2f7;
+    text-decoration: line-through;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.title {
+    margin: 0;
+    font-size: 2em;
+}
+
+.bg-accent {
+    background-color: #e2e8f0;
+}
+
+.curve {
+    fill: #e2e8f0;
+    margin-bottom: -10px;
+}
+
+.py-4 {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+/*
+'sm': '640px',
+'md': '768px',
+'lg': '1024px',
+'xl': '1280px',
+ */
+
+/* Breakpoints based on TailwindCSS framework (Url: https://tailwindcss.com/docs/breakpoints/) */
+
+@media screen and (max-width: 640px) {
+
+    .navbar__logo {
+        height: 60px;
+    }
+
+    .navbar__title {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .navbar__subtitle {
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .hero__img {
+        height: 250px;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about__body {
+        font-size: 1em;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .navbar__title {
+        font-size: 1.4em;
+    }
+
+    .navbar__subtitle {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .about__body {
+        font-size: 1em;
+    }
+}
